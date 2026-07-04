@@ -1,0 +1,42 @@
+import { ProviderDefinition } from '../core/types';
+
+export const groqProvider: ProviderDefinition = {
+  id: 'groq',
+  name: 'Groq',
+  models: [
+    {
+      id: 'groq/canopylabs/orpheus-v1-english',
+      modelId: 'canopylabs/orpheus-v1-english',
+      name: 'Orpheus English',
+      provider: 'groq',
+      category: 'audio',
+      inputModalities: ['text'],
+      outputModalities: ['audio'],
+      priority: 79,
+      enabled: true,
+      maxInputTokens: 8192,
+      maxOutputTokens: 0,
+      supportsTools: false,
+      free: true,
+      freeReason: 'provider free-tier pool',
+      tags: ['groq', 'text-to-speech', 'orpheus', 'free'],
+    },
+    {
+      id: 'groq/canopylabs/orpheus-arabic-saudi',
+      modelId: 'canopylabs/orpheus-arabic-saudi',
+      name: 'Orpheus Arabic Saudi',
+      provider: 'groq',
+      category: 'audio',
+      inputModalities: ['text'],
+      outputModalities: ['audio'],
+      priority: 78,
+      enabled: true,
+      maxInputTokens: 8192,
+      maxOutputTokens: 0,
+      supportsTools: false,
+      free: true,
+      freeReason: 'provider free-tier pool',
+      tags: ['groq', 'text-to-speech', 'orpheus', 'arabic', 'free'],
+    },
+  ],
+};
