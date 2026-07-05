@@ -256,7 +256,7 @@ const openAiCompatibilityRows = [
   {
     area: 'Base URL',
     support: 'Use your OpenProvider deployment origin plus `/v1` as the OpenAI SDK base URL.',
-    example: 'https://openprovider.mimika.in/v1',
+    example: 'https://openprovider-chi.vercel.app/v1',
   },
   {
     area: 'API key',
@@ -314,7 +314,7 @@ const openAiSdkSnippets: Array<{
 
 const client = new OpenAI({
   apiKey: process.env.OPENPROVIDER_API_KEY,
-  baseURL: "https://openprovider.mimika.in/v1"
+  baseURL: "https://openprovider-chi.vercel.app/v1"
 });
 
 const completion = await client.chat.completions.create({
@@ -339,7 +339,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key=os.environ["OPENPROVIDER_API_KEY"],
-    base_url="https://openprovider.mimika.in/v1",
+    base_url="https://openprovider-chi.vercel.app/v1",
 )
 
 response = client.chat.completions.create(
