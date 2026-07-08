@@ -24,7 +24,7 @@ import { ProtectedLink } from '@/components/auth/auth-gate';
 import { ProviderMark } from '@/components/providers/provider-mark';
 import { providerName } from '@/lib/provider-meta';
 import { homeJsonLd } from '@/lib/seo';
-import { DISCORD_INVITE_URL } from '@/lib/social-links';
+
 
 export const revalidate = 300;
 
@@ -283,14 +283,7 @@ export default async function HomePage() {
             <ProtectedLink className="button-link" href="/models"><Search size={16} /> Explore models</ProtectedLink>
             <ProtectedLink className="button-link secondary" href="/chat"><MessageSquareText size={16} /> Open chat</ProtectedLink>
             <ProtectedLink className="button-link secondary" href="/playground"><AudioLines size={16} /> Media playground</ProtectedLink>
-          </div>
-          <div className="hero-community-actions">
-            <a className="hero-discord-link" href={DISCORD_INVITE_URL} rel="noreferrer" target="_blank">
-              <MessageCircle size={16} />
-              Join us on Discord
-            </a>
-          </div>
-        </div>
+          
 
         <div className="hero-provider-rail" aria-label="Configured providers">
           {providerHighlights.map((item, index) => (
@@ -514,12 +507,7 @@ export default async function HomePage() {
           <ProtectedLink href="/models">Models</ProtectedLink>
           <ProtectedLink href="/chat">Chat</ProtectedLink>
           <ProtectedLink href="/account">Account</ProtectedLink>
-          <a className="footer-discord-link" href={DISCORD_INVITE_URL} rel="noreferrer" target="_blank">
-            <MessageCircle size={15} />
-            Join Discord
-            <ExternalLink size={13} />
-          </a>
-          <a href="https://github.com/vkop007/OpenProvider" rel="noreferrer" target="_blank">
+          <a href="https://github.com/AnitSarkar123/openprovider" rel="noreferrer" target="_blank">
             <GitBranch size={15} />
             GitHub
             <ExternalLink size={13} />
