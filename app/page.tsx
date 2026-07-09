@@ -283,7 +283,8 @@ export default async function HomePage() {
             <ProtectedLink className="button-link" href="/models"><Search size={16} /> Explore models</ProtectedLink>
             <ProtectedLink className="button-link secondary" href="/chat"><MessageSquareText size={16} /> Open chat</ProtectedLink>
             <ProtectedLink className="button-link secondary" href="/playground"><AudioLines size={16} /> Media playground</ProtectedLink>
-          
+          </div>
+        </div>
 
         <div className="hero-provider-rail" aria-label="Configured providers">
           {providerHighlights.map((item, index) => (
